@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f6ecbf;
+    height: 100vh;
+    font-family: 'Anton', sans-serif;
+}
+
+.buttonKey{
+    width: 100%;
+    background-color: #f9f9f9;
+    height: 77.5vh;
+}
+
+h1{
+
+    font-family: 'Anton', sans-serif;
+    font-size: 7em;
+    text-align: center;
+
+}
+#tune-type{
+    margin-left: 45%;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+
+text-align: center;
+font-family: 'Roboto', sans-serif;
+background-color: #f9f9f9;
+}
