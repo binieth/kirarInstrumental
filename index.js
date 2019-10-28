@@ -2,7 +2,11 @@ var keyboardString = document.querySelectorAll('button');
 var tizitaSounds = document.querySelectorAll('Option')[0].setAttribute('src', 'sounds/Tizita');
 var batiSounds = document.querySelectorAll('Option')[1].setAttribute('src', 'sounds/Bati');
 
-
+//function to help choose tune option between Bati and Tizita
+function getSelectValue(){
+    var selectedValue = document.getElementById('tune-list').value;
+    console.log(selectedValue);
+}
 // function tizitaSound() {
 //     var audio = new Audio('sounds/Tizita/Tizita' + [i] + '.mp3');
 //     audio.play();
