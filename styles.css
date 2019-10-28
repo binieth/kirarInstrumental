@@ -2,29 +2,56 @@
     padding: 0;
     margin: 0;
 }
+
 body{
-    background-color: #f6ecbf;
+    background-color: #fcf9ea;
     height: 100vh;
     font-family: 'Anton', sans-serif;
 }
 
-.buttonKey{
-    width: 100%;
-    background-color: #f9f9f9;
-    height: 77.5vh;
-}
-
 h1{
-
+    color: #23374d;
     font-family: 'Anton', sans-serif;
     font-size: 7em;
     text-align: center;
-
 }
-#tune-type{
+
+select{
+    width: 4em;
+    border-radius: 0.5em;
     margin-left: 45%;
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
+    color: #23374d;
+    margin-bottom: 1em;
+}
+
+.buttonKey{
+    width: 100%;
+    background-color: #badfdb;
+    height: 75vh;
+    
+    
+}
+
+button{   
+    margin: 1em;
+    background: #ffc5a1;
+    
+}
+.a, .s, .d, .j, .k, .l{
+    color: #23374d;
+    font-family: 'Anton', sans-serif;
+    font-size: 1em;
+    height: 8em;
+    width: 9em;
+    border-radius: 1em;
+    margin: 1%;
+    margin-top: 10%;
+    margin-left: 7%;
+    
+   
+    
 }
 
 footer{
