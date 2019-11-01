@@ -1,22 +1,24 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: #fcf9ea;
     height: 100vh;
     font-family: 'Anton', sans-serif;
+    text-align: center;
 }
 
-h1{
+h1 {
     color: #23374d;
     font-family: 'Anton', sans-serif;
     font-size: 7em;
     text-align: center;
+    text-shadow: 3px 0 #DA0463;
 }
 
-select{
+select {
     width: 4em;
     border-radius: 0.5em;
     margin-left: 45%;
@@ -26,22 +28,27 @@ select{
     margin-bottom: 1em;
 }
 
-.buttonKey{
+.buttonKey {
     width: 100%;
     background-color: #badfdb;
     height: 75vh;
-    
-    
+
+
 }
 
-button{   
+button {
     margin: 1em;
     background: #ffc5a1;
-    
+
 }
-.a, .s, .d, .j, .k, .l{
+
+.a,
+.s,
+.d,
+.j,
+.k,
+.l {
     color: #23374d;
-    font-family: 'Anton', sans-serif;
     font-size: 1em;
     height: 8em;
     width: 9em;
@@ -49,14 +56,76 @@ button{
     margin: 1%;
     margin-top: 10%;
     margin-left: 7%;
-    
-   
-    
+
+
+
 }
 
-footer{
+footer {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
 
-text-align: center;
-font-family: 'Roboto', sans-serif;
-background-color: #f9f9f9;
+.w {
+    background-image: url('images/kirar_img.jpg');
+}
+
+.a {
+    background-image: url('images/kirar_img.jpg');
+}
+
+.s {
+    background-image: url('images/kirar_img.jpg');
+}
+
+.d {
+    background-image: url('images/kirar_img.jpg');
+}
+
+.j {
+    background-image: url('images/kirar_img.jpg');
+}
+
+.k {
+    background-image: url('images/kirar_img.jpg');
+}
+
+.l {
+    background-image: url('images/kirar_img.jpg');
+}
+
+.set {
+    margin: 10% auto;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+
+.red {
+    color: red;
+}
+
+.kirarNote {
+    outline: none;
+    border: 10px solid #404B69;
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: #DA0463;
+    text-shadow: 3px 0 #DBEDF3;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
 }
