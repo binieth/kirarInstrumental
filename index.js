@@ -1,91 +1,93 @@
-var keyboardString = document.querySelectorAll('button');
-var tizitaSounds = document.querySelectorAll('Option')[0].setAttribute('src', 'sounds/Tizita');
-var batiSounds = document.querySelectorAll('Option')[1].setAttribute('src', 'sounds/Bati');
+var kirarNoteLength = document.querySelectorAll('.kirarNote').length;
 
-//function to help choose tune option between Bati and Tizita
-function getSelectValue(){
-    var selectedValue = document.getElementById('tune-list').value;
-    console.log(selectedValue);
-}
-// function tizitaSound() {
-//     var audio = new Audio('sounds/Tizita/Tizita' + [i] + '.mp3');
-//     audio.play();
-// }
+/* detecting button press! 
+i want to create a for loop to go through each kirarNote*/
+for (var i = 0; i < kirarNoteLength; i++) {
 
-function makeBati() {
-    switch (key) {
-        case "a":
-            var audio = new Audio('sounds/Bati/Bati1.mp3');
-            audio.play();
-            break;
-        case "s":
-            var audio = new Audio('sounds/Bati/Bati2.mp3');
-            audio.play();
+    document.querySelectorAll('.kirarNote')[i].addEventListener('click', function () {
+        var buttonInnerHTML = this.innerHTML;
 
-            break;
-        case "d":
-            var audio = new Audio('sounds/Bati/Bati3.mp3');
-            audio.play();
-            break;
-        case "j":
-            var audio = new Audio('sounds/Bati/Bati4.mp3');
-            audio.play();
-            break;
-        case "k":
-            var audio = new Audio('sounds/Bati/Bati5.mp3');
-            audio.play();
-            break;
-        case "l":
-            var audio = new Audio('sounds/Bati/Bati6.mp3');
-            audio.play();
-            break;
-        default:
-            break;
-    }
-}
+        switch (buttonInnerHTML) {
+            case 'a':
+                var tizita1 = new Audio('sounds/Tizita1.mp3');
+                tizita1.play();
 
-function makeTizita(key) {
-    switch (key) {
-        case "a":
-            var audio = new Audio('sounds/Tizita/Tizita1.mp3');
-            audio.play();
-            break;
-        case "s":
-            var audio = new Audio('sounds/Tizita/Tizita2.mp3');
-            audio.play();
+                break;
+            case 's':
+                var tizita2 = new Audio('sounds/Tizita2.mp3');
+                tizita2.play();
 
-            break;
-        case "d":
-            var audio = new Audio('sounds/Tizita/Tizita3.mp3');
-            audio.play();
-            break;
-        case "j":
-            var audio = new Audio('sounds/Tizita/Tizita4.mp3');
-            audio.play();
-            break;
-        case "k":
-            var audio = new Audio('sounds/Tizita/Tizita5.mp3');
-            audio.play();
-            break;
-        case "l":
-            var audio = new Audio('sounds/Tizita/Tizita6.mp3');
-            audio.play();
-            break;
-        default:
-            break;
-    }
-}
+                break;
+            case 'd':
+                var tizita3 = new Audio('sounds/Tizita3.mp3');
+                tizita3.play();
 
-for (var i = 0; i < keyboardString.length; i++) {
-    document.querySelectorAll('.kirarNote')[i].addEventListener('click', function(){
-        makeTizita();
+                break;
+            case 'j':
+                var tizita4 = new Audio('sounds/Tizita4.mp3');
+                tizita4.play();
+
+                break;
+            case 'k':
+                var tizita5 = new Audio('sounds/Tizita5.mp3');
+                tizita5.play();
+
+                break;
+            case 'l':
+                var tizita6 = new Audio('sounds/Tizita6.mp3');
+                tizita6.play();
+
+                break;
+
+            default:console.log(buttonInnerHTML)
+        }
+
     });
+}
 
-    //detecting keyboard press! 
 
-document.addEventListener('keypress', function(e){
-    makeTizita(e.key);
-    // buttonAnimation(event.key);
+/*
+    detecting keyboard press! 
+*/
+
+document.addEventListener('keypress', function (event) {
+    clickTest(event.key);
 });
 
+function clickTest(key) {
+    switch (key) {
+        case 'a':
+            var audio = new Audio('sounds/Tizita1.mp3');
+            audio.play();
+
+            break;
+        case 's':
+            var audio = new Audio('sounds/Tizita2.mp3');
+            audio.play();
+
+            break;
+        case 'd':
+            var audio = new Audio('sounds/Tizita3.mp3');
+            audio.play();
+
+            break;
+        case 'j':
+            var audio = new Audio('sounds/Tizita4.mp3');
+            audio.play();
+
+            break;
+        case 'k':
+            var audio = new Audio('sounds/Tizita5.mp3');
+            audio.play();
+
+            break;
+        case 'l':
+            var audio = new Audio('sounds/Tizita6.mp3');
+            audio.play();
+
+            break;
+
+        default:
+            break;
+    }
 }
