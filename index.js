@@ -33,7 +33,7 @@ for (var i = 0; i < kirarNoteLength; i++) {
 
     document.querySelectorAll('.kirarNote')[i].addEventListener('click', function () {
         var buttonInnerHTML = this.innerHTML;
-
+        
         switch (buttonInnerHTML) {
             case 'a':
                 var tizita1 = new Audio('sounds/Tizita1.mp3');
